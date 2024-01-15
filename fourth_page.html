@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongal </title>
+</head>
+
+<style>
+
+body{
+
+background-image: url("imgs/sweet.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+}
+
+.text
+{
+  text-align: center;
+  width:40%;
+  color:black;
+  font-size:20px;
+  box-shadow:
+inset 15em 8em 8em lavender,
+0 0 0 2px black,
+0.3em 0.3em 1em black;
+ margin-left: 5%;
+ margin-top:14%;
+ padding: 10px;
+ font-style:italic ;
+ opacity:0;
+ animation: fadeIn 5s ease;
+ 
+ 
+}
+
+.text-visible
+{
+  transition: opacity 0.5s ease;
+  opacity:1;
+} 
+
+@keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
+
+button 
+{
+  border: 3px solid ;
+  width:100px;
+  height: 30px;
+  background-color:blueviolet;
+  color:white;
+  font-size: medium;
+  border-radius: 50%;
+  margin-left:87%;
+  margin-top:18%;
+  cursor: pointer;
+
+}
+
+
+
+
+</style>
+
+
+
+<body>
+
+    <h3 class="text">
+        The festival is marked with colorful kolam artwork. Kolam is a form of traditional decorative art that is drawn by using rice flour often along with natural or synthetic color powders.
+        The festival is named after the "Pongal" dish, which forms the festival's most significant practice. The dish is prepared by boiling freshly harvested rice in cow milk and raw cane sugar.
+    </h3>
+
+    <form method="post" action="fifth_page.html">
+
+     <button type="submit">
+        next
+     </button>
+
+
+    </form>
+
+   <script>
+        // After the page has loaded, add the class to make the text visible
+        document.addEventListener('DOMContentLoaded', function () {
+            var textElement = document.querySelector('.text');
+            textElement.classList.add('text-visible');
+        });
+    </script>  
+    
+
+
+
+</body>
+</html>

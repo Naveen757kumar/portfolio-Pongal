@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongal History</title>
+</head>
+<style>
+    
+    body{
+
+      background-image: url("imgs/hello.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .text
+    {
+        text-align: center;
+        width:40%;
+        color:black;
+        font-size:20px;
+        box-shadow:
+    inset 15em 8em 8em lavender,
+    0 0 0 2px black,
+    0.3em 0.3em 1em black;
+       margin-left: 33%;
+       margin-top:14%;
+       padding: 10px;
+       font-style:italic ;
+       opacity:0;
+       animation: fadeIn 5s ease;
+       
+       
+    }
+
+    .text-visible
+    {
+        transition: opacity 0.5s ease;
+        opacity:1;
+    } 
+
+    @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+    button 
+    {
+        border: 3px solid ;
+        width:100px;
+        height: 30px;
+        background-color:blueviolet;
+        color:white;
+        font-size: medium;
+        border-radius: 50%;
+        margin-left:87%;
+        margin-top:20%;
+        cursor: pointer;
+
+    }
+    
+
+
+
+
+</style>
+
+ 
+<body>
+    
+
+    <h3 class="text">
+        The festival is observed for three or four days in Tamil Nadu.
+The three days of the Pongal festival are called Bhogi Pongal, Surya Pongal, and Mattu Pongal.
+It is traditionally an occasion for decorating, offering prayers in the home, temples, getting together with family and friends, and exchanging gifts to renew social bonds of solidarity.
+
+    </h3>
+
+    <form method="post" action="fourth_page.html">
+
+     <button type="submit">
+        next
+     </button>
+
+
+    </form>
+
+   <script>
+        // After the page has loaded, add the class to make the text visible
+        document.addEventListener('DOMContentLoaded', function () {
+            var textElement = document.querySelector('.text');
+            textElement.classList.add('text-visible');
+        });
+    </script>  
+    
+  
+</body>
+</html>
